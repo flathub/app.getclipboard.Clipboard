@@ -6,4 +6,4 @@ Exec=sh -c "while true; do cb; sleep 3; clear; done"
 Type=Application
 Terminal=true
 Categories=Utility;Office;Development
-Comment=Cut, copy, and paste anything in your terminal
+Comment=Cut, copy, and paste anything, anytime, anywhere
