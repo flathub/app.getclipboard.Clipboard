@@ -9,6 +9,7 @@ finish-args:
   - --socket=wayland
   - --filesystem=host
   - --filesystem=xdg-run/Clipboard
+  - --socket=pulseaudio
 modules:
   - name: cb
     buildsystem: cmake-ninja
@@ -19,12 +20,12 @@ modules:
     sources:
       - type: git
         url: https://github.com/Slackadays/Clipboard
-        tag: 0.8.0
-        commit: 083bdbb6ea2886681227899754b22c3c6f686376
+        tag: 0.8.1
+        commit: 263df737c4fbc749cb889ed0df30c191ecf75fda
       - type: file
         path: app.getclipboard.Clipboard.metainfo.xml
       - type: file
         path: app.getclipboard.Clipboard.desktop
       - type: file
         path: app.getclipboard.Clipboard.png
-    config-opts: ["-DCMAKE_BUILD_TYPE=MinSizeRel"]
+    config-opts: ["-DCMAKE_BUILD_TYPE=Release"]
