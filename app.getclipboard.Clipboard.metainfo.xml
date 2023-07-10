@@ -27,6 +27,10 @@
 
   <screenshots>
     <screenshot type="default">
+      <caption>Using Clipboard on your desktop to see what you've copied</caption>
+      <image type="source" width="1736" height="1114">https://getclipboard.app/LiveTerminalDemo.png</image>
+    </screenshot>
+    <screenshot>
       <caption>An example of using Clipboard</caption>
       <image type="source" width="1906" height="1010">https://raw.githubusercontent.com/Slackadays/Clipboard/0.8.0/documentation/readme-assets/CBDemo.png</image>
     </screenshot>
