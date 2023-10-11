@@ -1,6 +1,6 @@
 app-id: app.getclipboard.Clipboard
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 command: cb
 finish-args:
@@ -20,8 +20,10 @@ modules:
     sources:
       - type: git
         url: https://github.com/Slackadays/Clipboard
-        tag: 0.8.1
-        commit: 263df737c4fbc749cb889ed0df30c191ecf75fda
+        tag: 0.8.3
+        commit: 7da0a7d83ece9a1e8e2087d24cf93e3b1e355228
+      - type: patch
+        path: string_view.patch
       - type: file
         path: app.getclipboard.Clipboard.metainfo.xml
       - type: file
