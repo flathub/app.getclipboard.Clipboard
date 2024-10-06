@@ -17,17 +17,18 @@ modules:
       - install -D app.getclipboard.Clipboard.metainfo.xml /app/share/metainfo/app.getclipboard.Clipboard.metainfo.xml
       - install -D app.getclipboard.Clipboard.desktop /app/share/applications/app.getclipboard.Clipboard.desktop
       - install -D app.getclipboard.Clipboard.png /app/share/icons/hicolor/512x512/apps/app.getclipboard.Clipboard.png
+      - install -D clipboard.sh /app/bin/clipboard.sh
     sources:
       - type: git
         url: https://github.com/Slackadays/Clipboard
-        tag: 0.8.3
-        commit: 7da0a7d83ece9a1e8e2087d24cf93e3b1e355228
-      - type: patch
-        path: string_view.patch
+        tag: 0.9.1
+        commit: 969b894a81f08e4e33d3045ec51acfd6cdf4542d
       - type: file
         path: app.getclipboard.Clipboard.metainfo.xml
       - type: file
         path: app.getclipboard.Clipboard.desktop
       - type: file
         path: app.getclipboard.Clipboard.png
+      - type: file
+        path: clipboard.sh
     config-opts: ["-DCMAKE_BUILD_TYPE=Release"]
